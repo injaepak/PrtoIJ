@@ -25,24 +25,23 @@ int main()
     cin.tie(0);
     cout.tie(0);
 
-    cin >> n >> m;
+   cin >> n >> m;
 
-    for (int i = 0; i < n; i++)
-    {
+   for (int i = 0; i < n; i++)
+   {
         string s;
         cin >> s;
-
         mp[s] = true;
-    }
+   }
 
-    for (int i = 0; i < m; i++)
-    {
+   for (int i = 0; i < m; i++)
+   {
         string s;
         cin >> s;
 
         if (mp[s])
             cnt++;
-    }
+   }
 
-    cout << cnt;
+   cout << cnt;
 }
