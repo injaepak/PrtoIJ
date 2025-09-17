@@ -20,12 +20,22 @@ int main()
 
     for(int i = 0; i < n; i++)
     {
-        string s;
-        cin >> s;
+        string s, ss;
+        cin >> s >> ss;
 
-        if (s == "enter")
+        if (ss == "enter")
             mp[s] = true;
         else
             mp[s] = false;
+    }
+    
+    // mp.begin = 처음
+    // mp.rbegin = 마지막
+    // mp.rend = 뒤에서부터 마지막 = 처음
+    // 마지막 부분 부터 -> 
+    for(auto it = mp.rbegin(); it != mp.rend(); it++)
+    {
+        if (it->second == true)
+            cout << it->first << endl;
     }
 }
