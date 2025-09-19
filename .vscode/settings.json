@@ -3,6 +3,7 @@
         "xiosbase": "cpp",
         "xtree": "cpp",
         "xstring": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "iostream": "cpp"
     }
 }
